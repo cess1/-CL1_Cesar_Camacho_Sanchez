@@ -1,0 +1,13 @@
+CREATE DATABASE nombre_base_de_datos;
+CREATE DATABASE registro_productos;
+USE nombre_base_de_datos;
+USE registro_productos;
+
+CREATE TABLE productos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    idProducto VARCHAR(6) NOT NULL,
+    descripcion VARCHAR(50),
+    precioUnidad DECIMAL(10, 2),
+    stock INT,
+    estado ENUM('0', '1')
+);
